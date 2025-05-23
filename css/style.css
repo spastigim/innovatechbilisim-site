@@ -1,0 +1,150 @@
+/* Genel Ayarlar */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #004080;
+  padding: 20px 0;
+  color: white;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 400px;
+  margin: 20px 0;
+}
+.slide {
+  display: none;
+  height: 100%;
+}
+.slide.active {
+  display: block;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+/* About */
+.about {
+  background: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  background: #eee;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.service-item {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.service-item img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.contact {
+  background: white;
+  padding: 40px 0;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.contact button {
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.contact button:hover {
+  background: #003060;
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
